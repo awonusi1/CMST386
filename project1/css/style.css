@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("brick.jpg");
+  font-family: "Garamond", Serif;
+}
+
+
+nav {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+nav a {
+  padding: 14px;
+  font-size: 24px;
+  width: 50%;
+  float: left;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+}
+
+
+nav a:hover {
+  background-color: white;
+  color: black;
+}
+
+main {
+	background-color: white;
+	margin-bottom: 5px;
+}
+
+article.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 100px;
+  height: auto;
+}
+
+article.gallery:hover {
+  border: 1px solid #777;
+}
+
+article img {
+  width: 100%;
+  height: auto;
+}
+
+figcaption {
+  text-align: center;
+  letter-spacing: 2px;
+  font-size: 16px;
+  line-height: 15px;
+  color: black;
+}
+
+h1 {
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 12px;
+  letter-spacing: 12px;
+  font-size: 84px;
+  color: black;
+}
+
+h2 {
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  word-spacing: 12px;
+  letter-spacing: 12px;
+  font-size: 48px;
+  color: black;
+}
+
+p {
+  display: block;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  text-align: justify;
+  letter-spacing: 3px;
+  word-spacing: 1px;
+  font-size: 22px;
+  line-height: 30px;
+}
+
+
+ol {
+  padding: 15px;
+  text-align: left;
+  word-spacing: 5px;
+  letter-spacing: 5px;
+  font-size: 28px;
+  line-height: 40px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 30px;
+  text-align: center;
+  letter-spacing: 3px;
+  font-size: 24px;
+  line-height: 40px;
+}
+
+footer {
+  display: block;
+  padding: 10px 10px 0px 10px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 18px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  /* For tablets: */
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+}
+@media only screen and (min-width: 768px) {
+  /* For desktop: */
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+}
