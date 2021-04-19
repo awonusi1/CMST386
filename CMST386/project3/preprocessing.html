@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+	<html lang="en-US">
+	<head>
+		<title>CSS Preprocessing | Project 3</title>
+		<meta charset="UTF-8">
+		<meta name=”description” content= ”Background information on CSS preprocessing, LESS and SASS” />
+		<meta name=”keywords” content=”Gallery, responsive design, responsive, design, google analytics, reports, preprocessing, LESS, SASS, SCSS/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="../project3/css/style.css">
+		<link rel="stylesheet" href="https://fontawesome.com/icons/bars?style=solid">
+	</head>		
+	<body>
+		<button onclick="topFunction()" id="top_up" title="Go to top">Top</button>
+		
+		<nav id="links">
+			<a href="../index.html">Home</a>
+			<a href="../project3/project3.html">Project 3</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+			<i class="fas fa-bars"></i></a>
+		</nav>
+		
+		<header>
+			<h1>Preprocessing</h1>
+		</header>
+		
+		<main>
+			<article class="row">
+				<section class="background"></section>
+				<section class="col-3">
+				<h2>SASS</h2>
+				<p>Like we stated above, SASS among others, can be used as preprocessors to make writing code simpler. SASS and SCSS extends CSS in ways such as variables, analogs for functions and many other things. The preprocessor creates a normal CSS file and replaces all variables and other pieces of code with static values. Nesting selectors in SASS makes CSS easier to read. SASS also for the creation of “dry code” which is code without prefixes, and mixins allow for great design tools like gradients and box models. Variables can be used for colors, sizes, URLs and many other things. You can use the same variables multiple times in your code. If you change the value of a variable in this one single place, it will be updated everywhere the variable is used.</p>
+				</section>
+				
+				<section class="col-9">
+				<h2>Implement Preprocessing</h2>
+				<p>A preprocessor helps you write maintainable, future-proof code and it will seriously reduce the amount of CSS you have to write. Client-side pre-processing is intended as the task of transforming some content or style file before it is actually added to the document object model. Server-side processing is used to interact with permanent storage like databases or files. Models like LESS and SASS help implement these preprocessors.</p>
+				</section>
+			</article>
+		</main>
+
+		<ul class="breadcrumb">
+		<li><a href="../index.html">Home</a></li>
+		<li><a href="../project3/project3.html">Project 3</a></li>
+		<li><a href="../project3/preprocessing.html">Preprocessing</a></li>
+		</ul>
+
+		<footer>
+		  <p>© copyright Joseph Awonusi - CMST 386</p>
+		</footer>
+		
+		<script>
+		//Get the button
+		var mybutton = document.getElementById("top_up");
+
+		// When the user scrolls down 20px from the top of the document, show the button
+		window.onscroll = function() {scrollFunction()};
+
+		function scrollFunction() {
+		  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+			mybutton.style.display = "block";
+		  } else {
+			mybutton.style.display = "none";
+		  }
+		}
+
+		// When the user clicks on the button, scroll to the top of the document
+		function topFunction() {
+		  document.body.scrollTop = 0;
+		  document.documentElement.scrollTop = 0;
+		}
+		
+		// hamburger menu nav button clicks
+		function myFunction() {
+		  var x = document.getElementById("links");
+		  if (x.style.display === "block") {
+			x.style.display = "none";
+		  } else {
+			x.style.display = "block";
+		  }
+}
+		</script>		
+	</body>
+</html>
