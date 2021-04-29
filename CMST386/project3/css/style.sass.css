@@ -1,0 +1,118 @@
+@font-face
+   font-family: HeaderFont
+   src: url(ModernSerif.ttf)
+
+@font-face
+   font-family: BodyFont
+   src: url(RomanSerif.ttf)
+
+@mixin font_style
+	padding: 15px
+	text-align: center
+	text-transform: uppercase
+	word-spacing: 12px
+	letter-spacing: 12px
+	font-family: HeaderFont
+
+$body_font: 14px
+
+*
+	box-sizing: border-box
+
+nav
+	padding: 14px
+	font-size: 24px
+	width: 50%
+	float: left
+	text-decoration: none
+	text-align: center
+	text-transform: uppercase
+	color: black
+  
+	a 
+	  padding: 14px
+	  font-size: 24px
+	  width: 50%
+	  float: left
+	  text-decoration: none
+	  text-align: center
+	  text-transform: uppercase
+	  color: black
+  
+	a:hover
+	  background-color: white
+	  color: black
+ 
+article
+	gallery
+	  margin: 5px
+	  border: 1px solid #ccc
+	  float: left
+	  width: 100px
+	  height: auto
+		
+	gallery:hover
+	  border: 1px solid #777
+	
+	img
+	  width: 100%
+	  height: auto
+		
+ul.breadcrumb
+	padding: 10px 16px
+	list-style: none
+	background-color: #eee
+	
+	li
+	  display: inline
+	  font-size: 18px
+	
+	li+li:before 
+	  padding: 8px
+	  color: black
+	  content: "/\00a0"
+	
+	li a 
+	  color: #0275d8
+	  text-decoration: none
+	
+	li a:hover 
+	  color: #01447e
+	  text-decoration: underline
+
+h1
+  @include font_style
+  font-size: 84px
+  color: white
+
+h2 
+  @include font_style
+  font-size: 48px
+  color: black
+
+h3
+  @include font_style
+  font-size: 36px
+  color: black
+
+h4
+  text-align: center
+  font-family: BodyFont
+  $body_font
+  color: white
+
+p
+  display: block
+  max-width: 95%
+  margin-left: auto
+  margin-right: auto
+  padding: 25px
+  text-align: justify
+  line-height: 30px
+  word-spacing: 1px
+  font-family: BodyFont
+  $body_font
+  color: black
+
+
+	
